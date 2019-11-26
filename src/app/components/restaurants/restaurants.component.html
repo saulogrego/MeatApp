@@ -1,0 +1,20 @@
+<section class="content-header">
+  <h1>
+    Todos os Restaurantes
+  </h1>
+</section>
+
+<section class="content">
+  <div class="row">
+    <div *ngFor="let rest of restaurants">
+        <div *ngIf="rest.id !== 1">
+          <div  class="col-sm-6 col-xs-12">
+        
+              <app-restaurant [restaurant]="rest"></app-restaurant>
+        </div>
+        <!-- /.info-box -->
+      </div>
+    </div>
+      <!-- /.col -->
+  </div>
+</section>
